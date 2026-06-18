@@ -532,3 +532,53 @@ header {
         padding: 20px;
     }
 }
+
+/* ==========================================================================
+   AJUSTE DE PRECISÃO PARA CELULAR DEITADO (MODO PAISAGEM)
+   ========================================================================== */
+@media(max-width: 900px) and (max-height: 500px) {
+    /* Diminui ainda mais o menu para economizar espaço vertical */
+    #logo-img {
+        height: 45px !important;
+    }
+    
+    .navbar {
+        padding: 2px 0;
+    }
+
+    header .btn-outline {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Ajusta o recuo superior da primeira dobra para a tela deitada */
+    .hero {
+        padding-top: 80px;
+    }
+
+    /* Melhora o aproveitamento de espaço na imagem de perfil */
+    .profile-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .glow-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+    
+    /* Evita que os títulos das seções fiquem gigantes ao deitar a tela */
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .container {
+        padding: 30px 0;
+    }
+}
