@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRCODARA | Soluções Digitais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="site-principal">
+        <header>
+            <div class="navbar container">
+                <div class="logo">
+                    <img src="logo.png" alt="TRCODARA Logo" id="logo-img">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Quem Sou</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Nosso Trabalho</a></li>
+                        <li><a href="#como-trabalhamos">Como Trabalhamos</a></li>
+                    </ul>
+                </nav>
+                <a href="https://wa.me/5521990350738?text=Olá! 👋 Vi a divulgação da TRCODARA e gostaria de conversar sobre uma solução digital para o meu negócio." target="_blank" class="btn btn-outline">Contato</a>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="subtitle">TRCODARA</p>
+                    <h1>Transformamos ideias em <span class="text-glow">soluções digitais</span> para pequenos negócios.</h1>
+                    <p class="description">Criamos ferramentas, sistemas e experiências digitais que ajudam empresas a vender mais, organizar processos e melhorar sua presença online.</p>
+                    <a href="https://wa.me/5521990350738?text=Olá Thayná, gostaria de um orçamento!" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> Vamos Conversar?
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="glow-circle"></div>
+                    <img src="minha-foto.jpg" alt="Thayná Rosendo" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <div class="divisor-luminoso"></div>
+
+        <section id="sobre" class="sobre">
+            <div class="container text-center">
+                <h2>Tecnologia que <span class="text-glow">simplifica</span> o seu dia a dia</h2>
+                <p class="sobre-p">Prazer, me chamo <strong>Thayná Rosendo</strong>. Desenvolvo soluções sob medida com foco na realidade e na necessidade de pequenos negócios e empresas locais, trazendo tecnologia acessível de forma prática.</p>
+            </div>
+        </section>
+
+        <div class="divisor-luminoso"></div>
+
+        <section id="servicos" class="servicos">
+            <div class="container">
+                <h2 class="text-center">Nossos <span class="text-glow">Serviços</span></h2>
+                <div class="grid-servicos">
+                    <div class="card">
+                        <i class="fas fa-globe icon"></i>
+                        <h3>Landing Pages</h3>
+                        <p>Páginas profissionais para divulgação de produtos, serviços, eventos e negócios.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-shopping-cart icon"></i>
+                        <h3>Catálogos Digitais</h3>
+                        <p>Apresente seus produtos de forma moderna e organizada, acessível por celular ou QR Code.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-laptop-code icon"></i>
+                        <h3>Sistemas Sob Medida</h3>
+                        <p>Soluções desenvolvidas para atender necessidades específicas do seu negócio.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-cogs icon"></i>
+                        <h3>Automação de Processos</h3>
+                        <p>Reduza tarefas repetitivas e ganhe produtividade através da tecnologia.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-mobile-alt icon"></i>
+                        <h3>Artes e Redes Sociais</h3>
+                        <p>Criação de materiais visuais para fortalecer sua presença digital.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-rocket icon"></i>
+                        <h3>Consultoria Digital</h3>
+                        <p>Análise de oportunidades para modernizar processos e melhorar resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divisor-luminoso"></div>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="text-center">Conheça um pouco do <span class="text-glow">nosso trabalho</span></h2>
+                <p class="text-center" style="color: #888; margin-top: -30px; margin-bottom: 40px;">Clique em um projeto para visualizar a galeria de imagens e detalhes.</p>
+                <div class="grid-portfolio">
+                    
+                    <div class="portfolio-item" onclick="verProjetoNaMesmaPagina('carioca')">
+                        <img src="carioca-park.jpg" alt="Projeto Carioca Park" class="portfolio-img-banner">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Site Institucional</span>
+                            <h3>Carioca Park <i class="fas fa-arrow-right" style="font-size: 0.9rem; color:#00D4FF;"></i></h3>
+                            <p>Desenvolvimento de site completo focado na apresentação da marca, trazendo autoridade online, clareza nos serviços e canais diretos de conversão de clientes.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" onclick="verProjetoNaMesmaPagina('uber')">
+                        <img src="uber-eletronicos.jpg" alt="Projeto Uber Eletrônicos" class="portfolio-img-banner">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Landing Page</span>
+                            <h3>Uber Eletrônicos <i class="fas fa-arrow-right" style="font-size: 0.9rem; color:#00D4FF;"></i></h3>
+                            <p>Página de alta conversão projetada estrategicamente para venda rápida de produtos e eletrônicos, otimizada para o público mobile e focada em resultados imediatos.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" onclick="verProjetoNaMesmaPagina('caixa')">
+                        <img src="caixa-inteligente.jpg" alt="Projeto Caixa TRCODARA" class="portfolio-img-banner">
+                        <div class="portfolio-content">
+                            <span class="portfolio-tag">Sistema Comercial</span>
+                            <h3>Caixa TRCODARA <i class="fas fa-arrow-right" style="font-size: 0.9rem; color:#00D4FF;"></i></h3>
+                            <p>Sistema de caixa inteligente integrado com painéis visuais e dashboards modernos, projetado para automatizar vendas, entradas e tomadas de decisão ágeis.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="divisor-luminoso"></div>
+
+        <section id="como-trabalhamos" class="como">
+            <div class="container">
+                <h2 class="text-center">Como <span class="text-glow">Trabalhamos</span></h2>
+                <div class="linhas-processo">
+                    <div class="passo">
+                        <div class="numero">1</div>
+                        <h3>Entendimento</h3>
+                        <p>Alinhamos suas ideias e objetivos do negócio.</p>
+                    </div>
+                    <div class="passo">
+                        <div class="numero">2</div>
+                        <h3>Desenvolvimento</h3>
+                        <p>Construção da solução com design limpo e eficiente.</p>
+                    </div>
+                    <div class="passo">
+                        <div class="numero">3</div>
+                        <h3>Entrega</h3>
+                        <p>Seu projeto publicado e pronto para rodar.</p>
+                    </div>
+                    <div class="passo">
+                        <div class="numero">4</div>
+                        <h3>Suporte</h3>
+                        <p>Acompanhamento contínuo durante todo o projeto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divisor-luminoso"></div>
+
+        <section class="por-que">
+            <div class="container">
+                <h2 class="text-center">Por que escolher a <span class="text-glow">TRCODARA</span>?</h2>
+                <ul class="vantagens">
+                    <li><i class="fas fa-check-circle"></i> Atendimento próximo e personalizado</li>
+                    <li><i class="fas fa-check-circle"></i> Soluções adaptadas à realidade do cliente</li>
+                    <li><i class="fas fa-check-circle"></i> Tecnologia acessível para pequenos negócios</li>
+                    <li><i class="fas fa-check-circle"></i> Desenvolvimento focado em resultados reais</li>
+                    <li><i class="fas fa-check-circle"></i> Suporte durante todo o projeto</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <h3>Vamos transformar sua ideia em uma solução digital?</h3>
+                <p style="margin-top: 10px;">TRCODARA - Soluções digitais para empresas locais</p>
+                <br>
+                <a href="https://wa.me/5521990350738?text=Olá Thayná, gostaria de um orçamento!" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Fale Comigo no WhatsApp
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="tela-projeto-detalhe" style="display: none; padding: 60px 0; background-color: #0A0A0A; min-height: 100vh;">
+        <div style="max-width: 900px; margin: 0 auto; width: 90%;">
+            <button onclick="voltarParaOSitePrincipal()" class="btn btn-outline" style="margin-bottom: 30px;">
+                <i class="fas fa-arrow-left"></i> Voltar para o Início
+            </button>
+            <h1 id="dinamico-titulo" class="text-glow" style="font-size: 2.5rem; margin-bottom: 15px;">Título</h1>
+            <p id="dinamico-descricao" style="color: #bbb; line-height: 1.6; margin-bottom: 40px; font-size: 1.1rem;">Descrição...</p>
+            
+            <div id="dinamico-galeria" style="display: flex; flex-direction: column; gap: 40px;">
+                </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+    <script>
+        // BANCO DE DADOS ATUALIZADO COM OS NOVOS TÍTULOS E EXPLICAÇÕES
+        const infosPortfólio = {
+            carioca: {
+                titulo: "Carioca Park - Site para a sua empresa",
+                desc: "Este projeto foi planejado como um site corporativo completo e moderno. O foco principal é consolidar a presença digital da empresa local, centralizando todas as informações institucionais, catálogos de serviços e organizando pontos estratégicos de contato para que novos clientes solicitem orçamentos de forma simples.",
+                imagens: ["carioca-tela1.jpg", "carioca-tela2.jpg"] // Mude para as suas fotos internas reais
+            },
+            uber: {
+                titulo: "Uber Eletrônicos - Landing page",
+                desc: "Uma Landing Page estruturada estritamente para conversão e vendas rápidas. O design futurista e limpo guia o usuário de forma intuitiva pelos produtos em destaque, quebrando objeções e facilitando o fechamento do pedido de forma ágil, totalmente otimizado para o tráfego que vem pelo smartphone.",
+                imagens: ["uber-print1.jpg", "uber-print2.jpg"] // Mude para as suas fotos internas reais
+            },
+            caixa: {
+                titulo: "Caixa TRCODARA - Sistema de caixa inteligente",
+                desc: "O Caixa TRCODARA é um software robusto voltado para a automação comercial. Desenvolvido para substituir de vez as anotações manuais, ele traz uma interface intuitiva de frente de caixa e conta com dashboards inteligentes para acompanhamento de vendas em tempo real, relatórios financeiros simplificados e controle de faturamento.",
+                imagens: ["caixa-print1.jpg", "caixa-print2.jpg"] // Mude para as suas fotos internas reais
+            }
+        };
+
+        function verProjetoNaMesmaPagina(idProjeto) {
+            const dados = infosPortfólio[idProjeto];
+            if(!dados) return;
+
+            // Injeta os textos corretos
+            document.getElementById('dinamico-titulo').innerText = dados.titulo;
+            document.getElementById('dinamico-descricao').innerText = dados.desc;
+
+            // Limpa e injeta as imagens internas empilhadas e grandes
+            const galeria = document.getElementById('dinamico-galeria');
+            galeria.innerHTML = "";
+            
+            dados.imagens.forEach(srcImg => {
+                const img = document.createElement('img');
+                img.src = srcImg;
+                img.style.width = "100%";
+                img.style.borderRadius = "8px";
+                img.style.border = "1px solid rgba(0, 175, 255, 0.2)";
+                img.style.boxShadow = "0 0 20px rgba(0, 175, 255, 0.1)";
+                galeria.appendChild(img);
+            });
+
+            // Esconde o site principal e rola a tela para o topo
+            document.getElementById('site-principal').style.display = "none";
+            document.getElementById('tela-projeto-detalhe').style.display = "block";
+            window.scrollTo(0, 0);
+        }
+
+        function voltarParaOSitePrincipal() {
+            // Esconde a tela de detalhes e mostra o site de volta
+            document.getElementById('tela-projeto-detalhe').style.display = "none";
+            document.getElementById('site-principal').style.display = "block";
+            
+            // Rola suavemente até a seção de portfólio de onde o usuário saiu
+            document.getElementById('portfolio').scrollIntoView();
+        }
+    </script>
+</body>
+</html>

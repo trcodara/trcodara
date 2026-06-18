@@ -1,0 +1,475 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E PALETA DE CORES (PRETO, AZUL ELÉTRICO E NEON)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.text-center { text-align: center; }
+
+.text-glow {
+    color: #00D4FF;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6), 0 0 20px rgba(0, 175, 255, 0.4);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #00AFFF;
+    color: #0A0A0A;
+    box-shadow: 0 0 15px rgba(0, 175, 255, 0.4);
+}
+
+.btn-primary:hover {
+    background-color: #00D4FF;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.8);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 2px solid #00AFFF;
+    color: #00AFFF;
+}
+
+.btn-outline:hover {
+    background-color: #00AFFF;
+    color: #0A0A0A;
+    box-shadow: 0 0 15px rgba(0, 175, 255, 0.5);
+}
+
+/* Header & Navbar */
+header {
+    background-color: rgba(10, 10, 10, 0.9);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#logo-img {
+    height: 110px !important; 
+    width: auto !important;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00D4FF;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 140px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-text .subtitle {
+    color: #00AFFF;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text .description {
+    font-size: 1.1rem;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Foto de Perfil com Efeito Glow */
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00AFFF;
+    z-index: 2;
+}
+
+.glow-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,212,255,0.4) 0%, rgba(0,175,255,0) 70%);
+    top: -10px;
+    z-index: 1;
+    animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.6; }
+    100% { transform: scale(1.05); opacity: 1; }
+}
+
+/* Seção Sobre */
+.sobre {
+    background: linear-gradient(180deg, #0A0A0A 0%, #111111 100%);
+    border-bottom: 1px solid rgba(0, 175, 255, 0.1);
+}
+.sobre-p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #DDDDDD;
+}
+
+/* Cards de Serviços */
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00AFFF;
+    box-shadow: 0 5px 20px rgba(0, 175, 255, 0.2);
+}
+
+.card .icon {
+    font-size: 2rem;
+    color: #00AFFF;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #AAAAAA;
+    line-height: 1.5;
+}
+
+/* Conheça Nosso Trabalho */
+.portfolio {
+    background: #0E0E0E;
+}
+
+.grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.portfolio-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.portfolio-item {
+    background: #141414;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    border-color: #00D4FF;
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.3);
+}
+
+.portfolio-img-banner {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 175, 255, 0.1);
+}
+
+.portfolio-content {
+    padding: 25px;
+}
+
+.portfolio-tag {
+    display: inline-block;
+    color: #00D4FF;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.portfolio-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-content p {
+    color: #B3B3B3;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Processo (Como Trabalhamos) */
+.linhas-processo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.passo {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.passo .numero {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #0A0A0A;
+    border: 2px solid #00D4FF;
+    color: #00D4FF;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+}
+
+/* Por Que Escolher */
+.por-que {
+    background: #111111;
+}
+
+.vantagens {
+    list-style: none;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.vantagens li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.vantagens i {
+    color: #00D4FF;
+}
+
+/* Footer / CTA final */
+.footer {
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    padding: 60px 0;
+}
+
+.footer h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+.divisor-luminoso {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0,175,255,0) 0%, rgba(0,212,255,0.5) 50%, rgba(0,175,255,0) 100%);
+    width: 100%;
+}
+
+/* ESTILIZAÇÃO COMPARTILHADA PARA AS PÁGINAS INTERNAS DOS PROJETOS */
+.projeto-body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+}
+
+.projeto-container {
+    padding: 100px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.galeria-projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.galeria-projeto img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 175, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 175, 255, 0.1);
+}
+
+.btn-voltar {
+    color: #00D4FF;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 25px;
+    transition: color 0.2s;
+}
+
+.btn-voltar:hover {
+    color: #00AFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE E AJUSTE MOBILE DE PRECISÃO
+   ========================================================================== */
+@media(max-width: 768px) {
+    .navbar {
+        padding: 5px 0;
+    }
+
+    /* Reduz a logo no celular para não engolir o topo */
+    #logo-img {
+        height: 60px !important; 
+        width: auto !important;
+    }
+
+    /* Ajusta o botão de contato para encaixar perfeitamente no topo */
+    header .btn-outline {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Força o recuo superior para a foto não colar no menu */
+    .hero {
+        padding-top: 110px;
+    }
+
+    /* Reorganiza o grid para uma única coluna centralizada */
+    .hero-grid { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+        gap: 20px;
+    }
+
+    /* Coloca a sua imagem no topo do fluxo mobile */
+    .hero-image { 
+        order: -1; 
+    }
+
+    /* Ajusta proporcionalmente o tamanho da imagem de perfil */
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .glow-circle {
+        width: 240px;
+        height: 240px;
+        top: -10px;
+    }
+
+    /* Diminui a fonte do título principal para evitar quebras bruscas */
+    .hero-text h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-top: 15px;
+    }
+
+    /* Reajusta os títulos das outras seções */
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    /* Esconde os links de texto padrão no mobile */
+    .nav-links { 
+        display: none; 
+    }
+}
